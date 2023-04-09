@@ -1,0 +1,37 @@
+$ git log
+commit f5c9dfac00d8f72a1a3b6bc76454ef4bebbc59c1 (HEAD -> master, origin/master, bug3)
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Mon Apr 3 15:59:24 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 9b319cf748ddda254e343df791a93af6eefec6af
+Merge: b094411 a702c8b
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Sun Apr 9 14:38:35 2023 +0200
+
+    Merge branch 'bug2' with master branch
+
+commit a702c8b44c787701fcad17bcc78a3856f937e1f4 (origin/bug2, bug2)
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Mon Apr 3 15:55:25 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit b094411033af049753c6f00012146654a671dab1 (origin/bug1, bug1)
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Mon Apr 3 15:48:11 2023 +0200
+
+    Fix wrong loop for reading
+
+commit de909ab7c806a1b038b8f43c9d4b24715a2a8a87
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Mon Apr 3 15:09:35 2023 +0200
+
+    Add java class
+
+commit 1013930c7f010c8378650538512adf6aa6f2b340
+Author: Mia Stojanova <miaastojanova@gmail.com>
+Date:   Mon Apr 3 14:38:07 2023 +0200
+
+    Initial commit

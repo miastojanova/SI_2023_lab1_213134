@@ -1,0 +1,107 @@
+4. $ mkdir SI_2023_lab1_213134 
+$ cd SI_2023_lab1_213134
+$ git init
+- Креира нов директориум со име SI_2023_lab1_213134, влегува во новокреираниот директориум и го иницијализира Git.
+
+5. $ git remote add origin https://github.com/miastojanova/SI_2023_lab1_213134.git
+$ git remote -v
+origin  https://github.com/miastojanova/SI_2023_lab1_213134.git (fetch)
+origin  https://github.com/miastojanova/SI_2023_lab1_213134.git (push)
+- Поврзување на локалниот репозиториум со оддалечениот и правење проверка.
+
+6. $ git config --global user.name "Mia Stojanova"
+$ git config --global user.email miaastojanova@gmail.com
+- Најава (автор)
+
+$ echo "Миа Стојанова 213134" > README.md
+$ git add README.md    // vo staged
+$ git commit -m "Initial commit"
+- Креирање и запишување содржина во README.md, потоа додавање во staged и на крај комитување со соодветна порака.
+
+7. $ git add SILab1.java
+$ git commit -m "Add java class"
+- Додавање на SILab1.java во фаза staged (претходно мануелно додаден во директориумот) и комитување
+
+8. $ git push origin master
+- Поставување на направените комити на мастер гранката во оддалечениот репозиториум.
+
+9. $ git branch bug1
+$ git branch bug2
+$ git branch bug3
+- Креирање на 3 гранки со соодветни имиња од master гранката.
+
+10.$ git checkout bug1
+Switched to branch 'bug1'
+- Префрлање на новокреираната bug1 branch
+
+11. $ git add SILab1.java
+$ git commit -m "Fix wrong loop for reading"
+- По поправање на грешката во кодот, додавање на java дадотетката во staged, и правње commit  со соодветна порака.
+
+12.$ git checkout bug2
+Switched to branch 'bug2'
+- Префрлање на bug2 branch.
+
+13.$ git add SILab1.java
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+- По поправање на грешката во кодот, додавање на java дадотетката во staged, и правње commit  со соодветна порака.
+
+14.$ git checkout bug3
+Switched to branch 'bug3'
+- Префрлање на bug3 branch.
+
+15. $ git add SILab1.java
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+- По поправање на грешката во кодот, додавање на java дадотетката во staged, и правње commit  со соодветна порака.
+
+16.$ git push origin bug3
+$ git push origin bug1
+$ git push origin bug2
+- Синхронизирање на сите гранки со оддалечениот репозиториум.
+
+17.$ git checkout master
+Switched to branch 'master'
+-Префрлање на гранката master.
+
+18.$ git merge bug1
+Updating de909ab..b094411
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+- Спојување на гранката bug1 со master без конфликти, извршено со fast forward спојување.
+
+19.$ git push origin master 
+- Синхронизирање со оддалечениот репозиториум.
+
+20.$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+- Спојување на гранката bug2 со master без конфликти, искористено е recursive спојување
+
+21. $ git push origin master
+
+22.$ git checkout bug3
+Switched to branch 'bug3'
+
+23.$ git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+24.$ git checkout master
+Switched to branch 'master'
+
+25.$ git merge bug3
+Updating 9b319cf..f5c9dfa
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+- Нема конфликти, извршено е fast forward спојување
+
+26.$ git push origin master
+
+
+
+
+
+
